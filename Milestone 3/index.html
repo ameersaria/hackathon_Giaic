@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 id="resumeHeading">Static Resume Builder</h1>
+
+    <div id="resumeMain">
+        <div id="resumeHeader">
+            <div id="resumeCard">
+                <h2 id="userName">Ameer Saria</h2>
+                <p>
+                    <strong id="userEmail">Email: </strong> brotherzak723@gmail.com
+                    <strong id="userPhone">. Phone: </strong> +923495041723
+                </p>
+            </div>
+            <div id="resumeEducation">
+                <h3>Education</h3>
+                <p>Intermediate in Computer Science</p>
+                <p>Multimedia Graphics from Szabist Szabtech</p>
+                <p>CCCGAIE from GIAIC</p>
+                <h3>Experience</h3>
+                <p>6 months as a Frontend Developer at Governor House</p>
+                <h3 id="skillsToggle">Skills</h3>
+                <div id="skillsSection">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS & Tailwind CSS</li>
+                        <li>TypeScript & JavaScript</li>
+                        <li>Next.js</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                </div>
+                <button id="hideUnhideSkills">Hide Skills</button>
+                <button id="showFormButton">Generate Resume</button>
+            </div>
+        </div>
+
+        <div id="formContainer">
+            <h3>Fill in your details to generate your resume</h3>
+            <div class="formField">
+                <label for="inputName">Name:</label>
+                <input type="text" id="inputName" />
+            </div>
+            <div class="formField">
+                <label for="inputEmail">Email:</label>
+                <input type="email" id="inputEmail" />
+            </div>
+            <div class="formField">
+                <label for="inputPhone">Phone:</label>
+                <input type="text" id="inputPhone" />
+            </div>
+            <div class="formField">
+                <label for="inputEducation">Education:</label>
+                <textarea id="inputEducation" rows="3"></textarea>
+            </div>
+            <div class="formField">
+                <label for="inputExperience">Experience:</label>
+                <textarea id="inputExperience" rows="3"></textarea>
+            </div>
+            <div class="formField">
+                <label for="inputSkills">Skills:</label>
+                <textarea id="inputSkills" rows="3"></textarea>
+            </div>
+            <button id="submitForm">View Generated Resume</button>
+        </div>
+
+        <div id="resumeDisplay" style="display: none;">
+            <h2>Generated Resume</h2>
+            <div id="resumeResult">
+                <!-- <! Dynamic Resume will be generate after filling all the information  --> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
